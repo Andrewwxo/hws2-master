@@ -12,12 +12,7 @@ const Message = (props: MessagePropsType) => {
     return (
         <div id={'hw1-message-' + props.message.id} className={s.message}>
             <div className={s.imageAndText}>
-                <img
-                    id={'hw1-avatar-' + props.message.id}
-                    // создаёт студент
-                    src={'avatar.png'}
-                    //
-                />
+                <img id={'hw1-avatar-' + props.message.id} src="/src/s2-homeworks/hw01/avatar.png" alt="avatar"/>
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
