@@ -39,13 +39,13 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
 
     if (filter === 'high') {
-        affairs.filter(t => t.priority === 'high');
+        return affairs.filter(t => t.priority === 'high');
     }
     if (filter === 'middle') {
-        affairs.filter(t => t.priority === 'middle');
+        return affairs.filter(t => t.priority === 'middle');
     }
     if (filter === 'low') {
-        affairs.filter(t => t.priority === 'low');
+        return affairs.filter(t => t.priority === 'low');
     }
 
     return affairs // need to fix
